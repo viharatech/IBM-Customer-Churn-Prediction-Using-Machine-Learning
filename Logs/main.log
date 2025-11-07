@@ -1,0 +1,2176 @@
+2025-11-05 18:22:43,422 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:22:43,434 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:22:43,792 - INFO - Data saved successfully after imputations
+2025-11-05 18:22:48,465 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:22:48,515 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:22:48,537 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:22:48,589 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:22:48,620 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:22:48,620 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:22:48,637 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:22:48,637 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:22:48,637 - INFO - (1409, 16)
+2025-11-05 18:22:48,639 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:22:48,639 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:22:48,734 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:22:48,747 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:22:48,797 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:22:48,804 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:22:48,807 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:22:48,833 - INFO - Check_new(5634, 24)
+2025-11-05 18:22:48,833 - INFO - Check _new(1409, 24)
+2025-11-05 18:22:48,835 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:22:48,835 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:22:48,863 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:22:48,951 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:22:49,004 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:22:49,004 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:22:49,004 - INFO - (5634, 27)
+2025-11-05 18:22:49,004 - INFO - (1409, 27)
+2025-11-05 18:22:49,004 - INFO - (1409, 4)
+2025-11-05 18:22:49,004 - INFO - (5634, 4)
+2025-11-05 18:22:49,004 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:22:49,008 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:22:49,008 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:22:49,008 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:22:49,009 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:22:49,010 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:22:49,010 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:22:52,132 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:22:52,135 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:23:04,649 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:23:04,749 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:23:04,751 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:23:04,751 - INFO - Best Model and Scaler saved successfully as pickle files.
+2025-11-05 18:24:27,917 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:24:27,922 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:24:28,162 - INFO - Data saved successfully after imputations
+2025-11-05 18:24:31,011 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:24:31,036 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:24:31,057 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:24:31,087 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:24:31,119 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:24:31,119 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:24:31,125 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:24:31,125 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:24:31,125 - INFO - (1409, 16)
+2025-11-05 18:24:31,127 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:24:31,127 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:24:31,208 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:24:31,211 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:24:31,250 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:24:31,254 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:24:31,254 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:24:31,271 - INFO - Check_new(5634, 24)
+2025-11-05 18:24:31,271 - INFO - Check _new(1409, 24)
+2025-11-05 18:24:31,271 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:24:31,271 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:24:31,299 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:24:31,355 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:24:31,392 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:24:31,392 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:24:31,392 - INFO - (5634, 27)
+2025-11-05 18:24:31,392 - INFO - (1409, 27)
+2025-11-05 18:24:31,392 - INFO - (1409, 4)
+2025-11-05 18:24:31,392 - INFO - (5634, 4)
+2025-11-05 18:24:31,393 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:24:31,396 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:24:31,396 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:24:31,396 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:24:31,397 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:24:31,397 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:24:31,397 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:24:33,549 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:24:33,550 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:24:33,562 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:24:44,669 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:24:44,767 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:24:44,769 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:24:44,771 - INFO - Best Model and Scaler saved successfully as pickle files.
+2025-11-05 18:29:15,712 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:29:15,729 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:29:15,962 - INFO - Data saved successfully after imputations
+2025-11-05 18:29:19,001 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:29:19,018 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:29:19,035 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:29:19,061 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:29:19,100 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:29:19,100 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:29:19,106 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:29:19,106 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:29:19,106 - INFO - (1409, 16)
+2025-11-05 18:29:19,108 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:29:19,109 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:29:19,192 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:29:19,197 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:29:19,228 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:29:19,228 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:29:19,228 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:29:19,245 - INFO - Check_new(5634, 24)
+2025-11-05 18:29:19,245 - INFO - Check _new(1409, 24)
+2025-11-05 18:29:19,245 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:29:19,245 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:29:19,275 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:29:19,336 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:29:19,369 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:29:19,369 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:29:19,369 - INFO - (5634, 27)
+2025-11-05 18:29:19,369 - INFO - (1409, 27)
+2025-11-05 18:29:19,369 - INFO - (1409, 4)
+2025-11-05 18:29:19,369 - INFO - (5634, 4)
+2025-11-05 18:29:19,369 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:29:19,371 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:29:19,371 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:29:19,373 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:29:19,373 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:29:19,373 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:29:19,373 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:29:21,544 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:29:21,544 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:29:21,563 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:29:33,589 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:29:33,966 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:29:33,968 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:29:33,970 - INFO - Best Model and Scaler saved successfully as pickle files.
+2025-11-05 18:30:22,918 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:30:22,934 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:30:23,187 - INFO - Data saved successfully after imputations
+2025-11-05 18:30:28,471 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:30:28,516 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:30:28,562 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:30:28,696 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:30:28,752 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:30:28,752 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:30:28,758 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:30:28,758 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:30:28,758 - INFO - (1409, 16)
+2025-11-05 18:30:28,758 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:30:28,758 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:30:28,855 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:30:28,859 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:30:28,896 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:30:28,896 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:30:28,896 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:30:28,913 - INFO - Check_new(5634, 24)
+2025-11-05 18:30:28,913 - INFO - Check _new(1409, 24)
+2025-11-05 18:30:28,913 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:30:28,913 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:30:28,950 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:30:29,012 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:30:29,046 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:30:29,046 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:30:29,046 - INFO - (5634, 27)
+2025-11-05 18:30:29,046 - INFO - (1409, 27)
+2025-11-05 18:30:29,046 - INFO - (1409, 4)
+2025-11-05 18:30:29,046 - INFO - (5634, 4)
+2025-11-05 18:30:29,046 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:30:29,049 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:30:29,049 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:30:29,049 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:30:29,050 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:30:29,051 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:30:29,051 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:30:30,783 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:30:30,783 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:30:30,798 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:30:40,761 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:30:41,027 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:30:41,027 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:30:41,027 - ERROR - Issue is : 339 : due to : [Errno 2] No such file or directory: 'C:\\Users\\sivan\\OneDrive - MSFT\\internship\\output\\model.pkl'
+2025-11-05 18:31:28,950 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:31:28,962 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:31:29,204 - INFO - Data saved successfully after imputations
+2025-11-05 18:31:32,274 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:31:32,297 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:31:32,308 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:31:32,340 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:31:32,372 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:31:32,372 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:31:32,372 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:31:32,372 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:31:32,372 - INFO - (1409, 16)
+2025-11-05 18:31:32,372 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:31:32,380 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:31:32,458 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:31:32,462 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:31:32,490 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:31:32,490 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:31:32,500 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:31:32,517 - INFO - Check_new(5634, 24)
+2025-11-05 18:31:32,517 - INFO - Check _new(1409, 24)
+2025-11-05 18:31:32,517 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:31:32,517 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:31:32,545 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:31:32,608 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:31:32,638 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:31:32,638 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:31:32,638 - INFO - (5634, 27)
+2025-11-05 18:31:32,638 - INFO - (1409, 27)
+2025-11-05 18:31:32,638 - INFO - (1409, 4)
+2025-11-05 18:31:32,638 - INFO - (5634, 4)
+2025-11-05 18:31:32,638 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:31:32,642 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:31:32,642 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:31:32,642 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:31:32,643 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:31:32,644 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:31:32,644 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:31:34,329 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:31:34,330 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:31:34,342 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:31:44,036 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:31:44,296 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:31:44,296 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:31:44,296 - ERROR - Issue is : 339 : due to : [Errno 13] Permission denied: 'C:\\Users\\sivan\\OneDrive - MSFT\\Intership\\output'
+2025-11-05 18:32:31,468 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:32:31,479 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:32:31,718 - INFO - Data saved successfully after imputations
+2025-11-05 18:32:34,949 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:32:34,970 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:32:34,989 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:32:35,006 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:32:35,036 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:32:35,036 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:32:35,040 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:32:35,042 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:32:35,042 - INFO - (1409, 16)
+2025-11-05 18:32:35,043 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:32:35,043 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:32:35,115 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:32:35,115 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:32:35,148 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:32:35,148 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:32:35,153 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:32:35,170 - INFO - Check_new(5634, 24)
+2025-11-05 18:32:35,171 - INFO - Check _new(1409, 24)
+2025-11-05 18:32:35,171 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:32:35,171 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:32:35,197 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:32:35,247 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:32:35,283 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:32:35,283 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:32:35,283 - INFO - (5634, 27)
+2025-11-05 18:32:35,283 - INFO - (1409, 27)
+2025-11-05 18:32:35,283 - INFO - (1409, 4)
+2025-11-05 18:32:35,283 - INFO - (5634, 4)
+2025-11-05 18:32:35,283 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:32:35,283 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:32:35,283 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:32:35,293 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:32:35,293 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:32:35,293 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:32:35,293 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:32:37,026 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:32:37,028 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:32:37,040 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:32:47,631 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:32:47,905 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:32:47,907 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:32:47,907 - ERROR - Issue is : 339 : due to : [Errno 13] Permission denied: 'C:\\Users\\sivan\\OneDrive - MSFT\\Intership\\output'
+2025-11-05 18:33:17,573 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:33:17,586 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:33:17,828 - INFO - Data saved successfully after imputations
+2025-11-05 18:33:20,795 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:33:20,825 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:33:20,842 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:33:20,875 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:33:20,908 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:33:20,908 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:33:20,914 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:33:20,914 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:33:20,915 - INFO - (1409, 16)
+2025-11-05 18:33:20,915 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:33:20,917 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:33:20,998 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:33:21,007 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:33:21,027 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:33:21,027 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:33:21,043 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:33:21,061 - INFO - Check_new(5634, 24)
+2025-11-05 18:33:21,061 - INFO - Check _new(1409, 24)
+2025-11-05 18:33:21,063 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:33:21,063 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:33:21,090 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:33:21,161 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:33:21,195 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:33:21,195 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:33:21,195 - INFO - (5634, 27)
+2025-11-05 18:33:21,195 - INFO - (1409, 27)
+2025-11-05 18:33:21,195 - INFO - (1409, 4)
+2025-11-05 18:33:21,195 - INFO - (5634, 4)
+2025-11-05 18:33:21,195 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:33:21,203 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:33:21,203 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:33:21,206 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:33:21,206 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:33:21,206 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:33:21,206 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:33:23,042 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:33:23,042 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:33:23,060 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:33:34,770 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:33:34,977 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:33:34,979 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:33:34,981 - ERROR - Issue is : 339 : due to : [Errno 13] Permission denied: 'C:\\Users\\sivan\\OneDrive - MSFT\\Intership\\output'
+2025-11-05 18:34:48,627 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 18:34:48,637 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 18:34:48,878 - INFO - Data saved successfully after imputations
+2025-11-05 18:34:52,218 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 18:34:52,241 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:34:52,262 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:34:52,276 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 18:34:52,320 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 18:34:52,320 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 18:34:52,320 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:34:52,320 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 18:34:52,320 - INFO - (1409, 16)
+2025-11-05 18:34:52,320 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:34:52,320 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 18:34:52,415 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 18:34:52,419 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 18:34:52,446 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:34:52,450 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 18:34:52,452 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 18:34:52,469 - INFO - Check_new(5634, 24)
+2025-11-05 18:34:52,469 - INFO - Check _new(1409, 24)
+2025-11-05 18:34:52,469 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 18:34:52,469 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 18:34:52,495 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 18:34:52,559 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 18:34:52,590 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 18:34:52,590 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 18:34:52,590 - INFO - (5634, 27)
+2025-11-05 18:34:52,590 - INFO - (1409, 27)
+2025-11-05 18:34:52,590 - INFO - (1409, 4)
+2025-11-05 18:34:52,590 - INFO - (5634, 4)
+2025-11-05 18:34:52,590 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 18:34:52,593 - INFO - Training data shape check :(5634, 28)
+2025-11-05 18:34:52,593 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 18:34:52,593 - INFO - ----------------Before Balancing------------------------
+2025-11-05 18:34:52,594 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 18:34:52,595 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 18:34:52,595 - INFO - ---------------After Balancing-------------------------
+2025-11-05 18:34:54,296 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 18:34:54,296 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 18:34:54,314 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 18:35:04,911 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 18:35:05,190 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 18:35:05,192 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 18:35:05,193 - INFO - Best Model and Scaler saved successfully as pickle files.
+2025-11-05 19:29:32,850 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 19:29:32,864 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 19:29:33,060 - INFO - Data saved successfully after imputations
+2025-11-05 19:29:36,066 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 19:29:36,091 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:29:36,100 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:29:36,130 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 19:29:36,145 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 19:29:36,145 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 19:29:36,145 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 19:29:36,145 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 19:29:36,145 - INFO - (1409, 16)
+2025-11-05 19:29:36,145 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 19:29:36,159 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 19:29:36,222 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 19:29:36,225 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 19:29:36,250 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 19:29:36,253 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 19:29:36,254 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 19:29:36,264 - INFO - Check_new(5634, 24)
+2025-11-05 19:29:36,264 - INFO - Check _new(1409, 24)
+2025-11-05 19:29:36,264 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 19:29:36,264 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 19:29:36,280 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 19:29:36,345 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 19:29:36,370 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 19:29:36,370 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 19:29:36,370 - INFO - (5634, 27)
+2025-11-05 19:29:36,370 - INFO - (1409, 27)
+2025-11-05 19:29:36,370 - INFO - (1409, 4)
+2025-11-05 19:29:36,370 - INFO - (5634, 4)
+2025-11-05 19:29:36,370 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 19:29:36,370 - INFO - Training data shape check :(5634, 28)
+2025-11-05 19:29:36,370 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 19:29:36,370 - INFO - ----------------Before Balancing------------------------
+2025-11-05 19:29:36,370 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 19:29:36,370 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 19:29:36,370 - INFO - ---------------After Balancing-------------------------
+2025-11-05 19:29:39,627 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 19:29:39,627 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 19:29:39,641 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 19:29:52,543 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 19:29:52,773 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 19:29:52,774 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 19:29:52,774 - INFO - Best Model and Scaler saved successfully as pickle files.
+2025-11-05 19:30:22,699 - INFO - Data loaded with shape (7043, 23)
+2025-11-05 19:30:22,707 - INFO - Train: (5634, 21), Test: (1409, 21)
+2025-11-05 19:30:22,919 - INFO - Data saved successfully after imputations
+2025-11-05 19:30:25,432 - INFO - Index(['MonthlyCharges_itimp', 'TotalCharges_itimp'], dtype='object')
+2025-11-05 19:30:25,454 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:30:25,470 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:30:25,485 - INFO - Check null-       gender  SeniorCitizen  Partner  Dependents  tenure  PhoneService  ...  YearStayed    sim  TotalCharges_itimp  MonthlyCharges_itimp  MonthlyCharges_qt  TotalCharges_qt
+2142   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1623   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6074   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+1362   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+6754   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+...      ...            ...      ...         ...     ...           ...  ...         ...    ...                 ...                   ...                ...              ...
+3772   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5191   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5226   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+5390   False          False    False       False   False         False  ...       False  False               False                 False              False            False
+860    False          False    False       False   False         False  ...       False  False               False                 False              False            False
+
+[5634 rows x 24 columns]
+gender                  0
+SeniorCitizen           0
+Partner                 0
+Dependents              0
+tenure                  0
+PhoneService            0
+MultipleLines           0
+InternetService         0
+OnlineSecurity          0
+OnlineBackup            0
+DeviceProtection        0
+TechSupport             0
+StreamingTV             0
+StreamingMovies         0
+Contract                0
+PaperlessBilling        0
+PaymentMethod           0
+MonthlyCharges          0
+YearStayed              0
+sim                     0
+TotalCharges_itimp      0
+MonthlyCharges_itimp    0
+MonthlyCharges_qt       0
+TotalCharges_qt         0
+dtype: int64
+2025-11-05 19:30:25,513 - INFO - X_train_cols:Index(['gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure',
+       'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity',
+       'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV',
+       'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod',
+       'MonthlyCharges', 'YearStayed', 'sim', 'TotalCharges_itimp',
+       'MonthlyCharges_itimp', 'MonthlyCharges_qt', 'TotalCharges_qt'],
+      dtype='object')
+2025-11-05 19:30:25,513 - INFO - Outlier columns :Index(['MonthlyCharges_qt', 'TotalCharges_qt'], dtype='object')
+2025-11-05 19:30:25,519 - INFO - Check the num columns :Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'YearStayed',
+       'TotalCharges_itimp', 'MonthlyCharges_itimp', 'MonthlyCharges_qt',
+       'TotalCharges_qt', 'MonthlyCharges_qt_outl', 'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 19:30:25,519 - INFO - Check the cat columns :Index(['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines',
+       'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection',
+       'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract',
+       'PaperlessBilling', 'PaymentMethod', 'sim'],
+      dtype='object')
+2025-11-05 19:30:25,519 - INFO - (1409, 16)
+2025-11-05 19:30:25,519 - INFO - Check the num columns after removing unnecessary columns:Index(['SeniorCitizen', 'tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 19:30:25,519 - INFO - Check-label2142     No
+1623     No
+6074    Yes
+1362    Yes
+6754     No
+       ... 
+3772    Yes
+5191     No
+5226     No
+5390    Yes
+860      No
+Name: Churn, Length: 5634, dtype: object
+2025-11-05 19:30:25,573 - INFO -       Contract
+2142       1.0
+1623       2.0
+6074       0.0
+1362       0.0
+6754       2.0
+...        ...
+3772       0.0
+5191       2.0
+5226       0.0
+5390       0.0
+860        1.0
+
+[5634 rows x 1 columns]
+2025-11-05 19:30:25,585 - INFO -          sim  gender_Male  Partner_Yes  Dependents_Yes  ...  PaperlessBilling_Yes  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check
+2142      Vi          0.0          0.0             1.0  ...                   0.0                                    0.0                             0.0                         1.0
+1623  Airtel          0.0          0.0             0.0  ...                   1.0                                    0.0                             0.0                         0.0
+6074     Jio          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+1362  Airtel          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+6754      Vi          1.0          0.0             1.0  ...                   1.0                                    0.0                             0.0                         0.0
+...      ...          ...          ...             ...  ...                   ...                                    ...                             ...                         ...
+3772    BSNL          1.0          1.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+5191     Jio          0.0          1.0             1.0  ...                   1.0                                    1.0                             0.0                         0.0
+5226     Jio          1.0          1.0             1.0  ...                   1.0                                    0.0                             1.0                         0.0
+5390      Vi          1.0          0.0             0.0  ...                   1.0                                    0.0                             1.0                         0.0
+860   Airtel          1.0          0.0             0.0  ...                   0.0                                    1.0                             0.0                         0.0
+
+[5634 rows x 25 columns]
+2025-11-05 19:30:25,603 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 19:30:25,603 - INFO - 185     3
+2715    1
+3825    0
+1807    3
+132     1
+       ..
+6366    3
+315     2
+2439    1
+5002    3
+1161    1
+Name: sim, Length: 1409, dtype: int64
+2025-11-05 19:30:25,603 - INFO - Check-label[0 0 1 ... 0 1 0]
+2025-11-05 19:30:25,621 - INFO - Check_new(5634, 24)
+2025-11-05 19:30:25,621 - INFO - Check _new(1409, 24)
+2025-11-05 19:30:25,621 - INFO - Index(['tenure', 'YearStayed', 'MonthlyCharges_qt_outl',
+       'TotalCharges_qt_outl'],
+      dtype='object')
+2025-11-05 19:30:25,621 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+2142       1.0    2          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1623       2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+6074       0.0    0          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+1362       0.0    1          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+6754       2.0    2          0.0             1.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+3772       0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+5191       2.0    0          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+5226       0.0    0          1.0             1.0  ...                                    0.0                             1.0                         0.0              0
+5390       0.0    2          0.0             0.0  ...                                    0.0                             1.0                         0.0              1
+860        1.0    1          0.0             0.0  ...                                    1.0                             0.0                         0.0              0
+
+[5634 rows x 24 columns]
+2025-11-05 19:30:25,648 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  ...  PaymentMethod_Credit card (automatic)  PaymentMethod_Electronic check  PaymentMethod_Mailed check  SeniorCitizen
+185        0.0    3          1.0             0.0  ...                                    0.0                             1.0                         0.0              0
+2715       0.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+3825       2.0    0          1.0             1.0  ...                                    0.0                             0.0                         1.0              0
+1807       0.0    3          0.0             0.0  ...                                    0.0                             1.0                         0.0              0
+132        2.0    1          0.0             0.0  ...                                    0.0                             0.0                         0.0              0
+...        ...  ...          ...             ...  ...                                    ...                             ...                         ...            ...
+6366       2.0    3          1.0             0.0  ...                                    0.0                             0.0                         1.0              0
+315        1.0    2          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+2439       1.0    1          1.0             1.0  ...                                    0.0                             0.0                         0.0              0
+5002       2.0    3          1.0             1.0  ...                                    1.0                             0.0                         0.0              0
+1161       0.0    1          0.0             1.0  ...                                    0.0                             0.0                         1.0              0
+
+[1409 rows x 24 columns]
+2025-11-05 19:30:25,697 - INFO -       tenure  YearStayed  MonthlyCharges_qt_outl  TotalCharges_qt_outl
+2142      21        2016               -0.147316             -0.038911
+1623      54        2019                0.995273              1.027297
+6074       1        2015               -0.963839             -2.013875
+1362       4        2015               -0.018820             -0.896799
+6754       0        2014               -0.184216             -1.521194
+...      ...         ...                     ...                   ...
+3772       1        2015                0.893908             -1.218230
+5191      23        2016                0.744694              0.285781
+5226      12        2015               -0.972106             -0.791398
+5390      12        2015                1.088723             -0.112459
+860       26        2017               -1.509656             -0.622217
+
+[5634 rows x 4 columns]
+2025-11-05 19:30:25,715 - INFO - [0 0 1 ... 0 1 0]
+2025-11-05 19:30:25,715 - INFO - [1 0 0 ... 0 0 1]
+2025-11-05 19:30:25,715 - INFO - (5634, 27)
+2025-11-05 19:30:25,715 - INFO - (1409, 27)
+2025-11-05 19:30:25,715 - INFO - (1409, 4)
+2025-11-05 19:30:25,715 - INFO - (5634, 4)
+2025-11-05 19:30:25,715 - INFO - Index(['Contract', 'sim', 'Partner_Yes', 'Dependents_Yes', 'MultipleLines_Yes',
+       'InternetService_Fiber optic', 'InternetService_No',
+       'OnlineSecurity_No internet service', 'OnlineSecurity_Yes',
+       'OnlineBackup_No internet service', 'OnlineBackup_Yes',
+       'DeviceProtection_No internet service', 'DeviceProtection_Yes',
+       'TechSupport_No internet service', 'TechSupport_Yes',
+       'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'SeniorCitizen'],
+      dtype='object')
+2025-11-05 19:30:25,725 - INFO - Training data shape check :(5634, 28)
+2025-11-05 19:30:25,725 - INFO - Testing data shape check :(1409, 28)
+2025-11-05 19:30:25,725 - INFO - ----------------Before Balancing------------------------
+2025-11-05 19:30:25,725 - INFO - Total row for Good category in training data 5634 was : 1496
+2025-11-05 19:30:25,725 - INFO - Total row for Bad category in training data 5634 was : 4138
+2025-11-05 19:30:25,725 - INFO - ---------------After Balancing-------------------------
+2025-11-05 19:30:27,389 - INFO - Total row for Good category in training data 8276 was : 4138
+2025-11-05 19:30:27,389 - INFO - Total row for Bad category in training data 8276 was : 4138
+2025-11-05 19:30:27,400 - INFO -       Contract  sim  Partner_Yes  Dependents_Yes  MultipleLines_Yes  ...  SeniorCitizen  tenure  MonthlyCharges_qt_outl  TotalCharges_qt_outl  YearStayed
+0          0.0    3          1.0             0.0                0.0  ...              0       1               -1.000075             -1.782169        2015
+1          0.0    1          0.0             0.0                1.0  ...              0      41               -0.930990             -0.100500        2018
+2          2.0    0          1.0             1.0                0.0  ...              0      52               -2.356899             -0.073182        2019
+3          0.0    3          0.0             0.0                0.0  ...              0       1                0.152210             -1.206019        2015
+4          2.0    1          0.0             0.0                0.0  ...              0      67               -0.543031              0.657774        2020
+...        ...  ...          ...             ...                ...  ...            ...     ...                     ...                   ...         ...
+1404       2.0    3          1.0             0.0                0.0  ...              0      64               -0.163652              0.938314        2020
+1405       1.0    2          1.0             1.0                1.0  ...              0      51                1.851042              1.313528        2019
+1406       1.0    1          1.0             1.0                0.0  ...              0      17               -1.608327             -0.593502        2016
+1407       2.0    3          1.0             1.0                0.0  ...              0      69               -0.751404              0.589526        2020
+1408       0.0    1          0.0             1.0                0.0  ...              0       1               -0.843112             -1.697953        2015
+
+[1409 rows x 28 columns]
+2025-11-05 19:30:39,336 - INFO - Scaling applied on MonthlyCharges_itimp & TotalCharges_itimp.
+2025-11-05 19:30:39,556 - INFO - Accuracy of the model: 0.7752537457709038
+2025-11-05 19:30:39,558 - INFO - Test Accuracy : 0.7601135557132718
+2025-11-05 19:30:39,558 - INFO - Best Model and Scaler saved successfully as pickle files.

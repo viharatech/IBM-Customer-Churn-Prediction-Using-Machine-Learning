@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title if title else 'Churn Prediction Dashboard' }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2>📊 Churn Dashboard</h2>
+    </div>
+    <div class="nav-right">
+      <a href="/" class="{% if title == 'Prediction' %}active{% endif %}">Prediction</a>
+      <a href="/about" class="{% if title == 'About Model' %}active{% endif %}">About Model</a>
+      <a href="/developer" class="{% if title == 'Developer' %}active{% endif %}">Developer</a>
+    </div>
+  </nav>
+
+  <!-- ======= MAIN CONTENT ======= -->
+  <div class="dashboard">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+</body>
+</html>

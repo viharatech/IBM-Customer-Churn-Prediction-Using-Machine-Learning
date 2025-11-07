@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% block content %}
+{% set title = 'Developer' %}
+
+<section class="developer-wrapper">
+  <div class="developer-header">
+    <h1>👨‍💻 Developer Profile</h1>
+    <p>Meet the mind behind the Telecom Churn Prediction Model</p>
+  </div>
+
+  <div class="developer-card glass">
+    <div class="developer-grid">
+
+      <!-- Left Side - Info -->
+      <div class="developer-info">
+        <h2>💡 About Me</h2>
+        <p>
+          Hello! I’m <strong>Siva Narayana Surya Chandra Madhala</strong>, a passionate
+          <strong>Data Scientist & Machine Learning Developer</strong> who loves building AI systems
+          that convert data into actionable insights.
+        </p>
+
+        <h3>🎓 Background</h3>
+        <p>
+          With hands-on experience in <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, and
+          <strong>Data Analytics</strong>, I specialize in creating full ML pipelines —
+          from data preprocessing and feature engineering to model optimization and deployment using Flask.
+        </p>
+
+        <h3>🔗 Connect with Me</h3>
+        <ul class="contact-list">
+          <li><strong>📧 Email:</strong>
+            <a href="mailto:sivanarayana9347@gmail.com">sivanarayana9347@gmail.com</a>
+          </li>
+          <li><strong>🔗 LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/siva-n-madhala" target="_blank">linkedin.com/in/siva-n-madhala</a>
+          </li>
+          <li><strong>💻 GitHub:</strong>
+            <a href="https://github.com/siva-narayana-1" target="_blank">github.com/siva-narayana-1</a>
+          </li>
+        </ul>
+
+        <div class="skills">
+          <h3>🧠 Technical Expertise</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Flask</span><span>Machine Learning</span>
+            <span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span>
+            <span>XGBoost</span><span>EDA</span><span>Feature Engineering</span><span>Feature Selection</span>
+            <span>Data Visualization</span><span>Model Deployment</span><span>OpenCV</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Image -->
+      <div class="developer-image">
+        <div class="img-frame">
+          <img src="{{ url_for('static', filename='siva_image/siva.jpg') }}" alt="Developer Photo">
+        </div>
+        <p class="quote">"Turning data into decisions through intelligent automation."</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="developer-footer">
+    <a href="/" class="btn">🔍 Back to Prediction</a>
+  </div>
+</section>
+
+<style>
+.developer-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf3ff, #f5f9ff);
+  padding: 3rem 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.developer-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.developer-header h1 {
+  font-size: 2.4rem;
+  color: #004aad;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.developer-header p {
+  font-size: 1.1rem;
+  color: #555;
+  letter-spacing: 0.4px;
+}
+
+.developer-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.developer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.developer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* ===== Left Side ===== */
+.developer-info {
+  flex: 1 1 55%;
+  color: #333;
+  line-height: 1.6;
+}
+
+.developer-info h2,
+.developer-info h3 {
+  color: #007bff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.developer-info p {
+  margin-bottom: 1rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Skills ===== */
+.skills {
+  margin-top: 1.5rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.skill-tags span {
+  background: linear-gradient(90deg, #004aad, #00c6ff);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skill-tags span:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+}
+
+/* ===== Right Side ===== */
+.developer-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.img-frame {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  box-shadow: 0 6px 20px rgba(0,123,255,0.3);
+  transition: 0.3s;
+}
+
+.img-frame:hover {
+  transform: scale(1.05);
+}
+
+.developer-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* ===== Footer Button ===== */
+.developer-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.developer-footer .btn {
+  background: linear-gradient(90deg, #004aad, #00c6ff);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.developer-footer .btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #003b99, #00aaff);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .developer-grid {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .developer-info {
+    flex: 1 1 100%;
+  }
+  .developer-card {
+    padding: 2rem;
+  }
+  .developer-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+</style>
+
+{% endblock %}

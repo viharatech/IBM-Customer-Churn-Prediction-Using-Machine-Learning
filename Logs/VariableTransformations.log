@@ -1,0 +1,340 @@
+2025-11-05 18:22:48,490 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:22:48,492 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:22:48,494 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:22:48,530 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:22:48,530 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:22:48,530 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:24:31,024 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:24:31,024 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:24:31,024 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:24:31,046 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:24:31,047 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:24:31,048 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:29:19,011 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:29:19,011 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:29:19,011 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:29:19,026 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:29:19,026 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:29:19,035 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:30:28,488 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:30:28,489 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:30:28,492 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:30:28,535 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:30:28,537 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:30:28,539 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:31:32,282 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:31:32,282 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:31:32,287 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:31:32,306 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:31:32,308 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:31:32,308 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:32:34,955 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:32:34,955 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:32:34,955 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:32:34,979 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:32:34,979 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:32:34,981 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:33:20,805 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:33:20,812 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:33:20,812 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:33:20,836 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:33:20,836 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:33:20,836 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 18:34:52,231 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:34:52,231 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:34:52,231 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 18:34:52,241 - INFO - Quantile transformation completed successfully.
+2025-11-05 18:34:52,252 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 18:34:52,252 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 19:29:36,075 - INFO - Quantile transformation completed successfully.
+2025-11-05 19:29:36,081 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:29:36,081 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 19:29:36,100 - INFO - Quantile transformation completed successfully.
+2025-11-05 19:29:36,100 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:29:36,100 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036
+2025-11-05 19:30:25,443 - INFO - Quantile transformation completed successfully.
+2025-11-05 19:30:25,443 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:30:25,443 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+2142                 64.85             1336.80                -0.147316              -0.038911
+1623                 97.20             5129.45                 0.995273               1.027297
+6074                 23.45               23.45                -0.963839              -2.013875
+1362                 70.20              237.95                -0.018820              -0.896799
+6754                 61.90               62.05                -0.184216              -1.521194
+1212                 69.55              521.35                -0.058999              -0.557741
+2722                 18.95              613.95                -2.747453              -0.479739
+4006                 19.80             1414.65                -1.509656               0.005634
+6791                 39.65              733.35                -0.646588              -0.397961
+5466                 19.95              219.50                -1.384628              -0.940656
+2025-11-05 19:30:25,462 - INFO - Quantile transformation completed successfully.
+2025-11-05 19:30:25,462 - INFO - MonthlyCharges_itimp       0
+TotalCharges_itimp         0
+MonthlyCharges_itimp_qt    0
+TotalCharges_itimp_qt      0
+dtype: int64
+2025-11-05 19:30:25,463 - INFO -       MonthlyCharges_itimp  TotalCharges_itimp  MonthlyCharges_itimp_qt  TotalCharges_itimp_qt
+185                  24.80               24.80                -0.848075              -1.883744
+2715                 25.25              996.45                -0.783330              -0.207805
+3825                 19.35             1031.70                -2.119668              -0.180580
+1807                 76.35               76.35                 0.231828              -1.309557
+132                  50.55             3260.10                -0.419741               0.547886
+1263                 89.60             6127.60                 0.670557               1.369406
+3732                 77.15             1759.40                 0.247769               0.184717
+1672                 72.10             5016.65                 0.089119               0.989503
+811                 104.00             7250.15                 1.346386               1.769601
+2526                 19.40               19.40                -2.053336              -2.921036

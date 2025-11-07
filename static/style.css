@@ -1,0 +1,320 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary: #007bff;
+  --secondary: #00c6ff;
+  --dark: #0d1b2a;
+  --light: #f9fbff;
+  --accent: #00aaff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #eaf3ff, #f9fbff);
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  padding: 15px 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-right a {
+  color: #fff;
+  margin-left: 30px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.nav-right a:hover::after,
+.nav-right a.active::after {
+  width: 100%;
+}
+
+/* ==========================
+   CONTAINERS
+========================== */
+.container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 25px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ==========================
+   CARD & GLASS EFFECT
+========================== */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  padding: 40px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+.card h2, .section-title {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+/* ==========================
+   FORM STYLING
+========================== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0056b3, #00aaff);
+}
+
+/* ==========================
+   RESULT PAGE
+========================== */
+.result-card {
+  text-align: center;
+  padding: 60px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.result-card p {
+  font-size: 1.2rem;
+}
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+.about-section {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  padding: 50px;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #444;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* ==========================
+   DEVELOPER PAGE
+========================== */
+.developer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.developer-info {
+  flex: 1 1 50%;
+}
+
+.developer-info h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.developer-info p {
+  color: #333;
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.developer-info a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.developer-info a:hover {
+  text-decoration: underline;
+}
+
+.developer-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.developer-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.developer-image img:hover {
+  transform: scale(1.08);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
+  text-align: center;
+  background: var(--dark);
+  color: white;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  margin-top: 50px;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+@media (max-width: 900px) {
+  .developer-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 10px 20px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .developer-image img {
+    width: 200px;
+    height: 200px;
+  }
+}

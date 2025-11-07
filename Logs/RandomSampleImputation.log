@@ -1,0 +1,360 @@
+2025-11-05 18:22:43,434 - INFO - Iterative imputer started...
+2025-11-05 18:22:43,448 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:22:43,660 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:22:43,660 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:22:43,663 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:22:43,664 - INFO - Iterative imputer started...
+2025-11-05 18:22:43,666 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:22:43,729 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:22:43,729 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:22:43,729 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:24:27,922 - INFO - Iterative imputer started...
+2025-11-05 18:24:27,922 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:24:28,073 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:24:28,073 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:24:28,073 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:24:28,073 - INFO - Iterative imputer started...
+2025-11-05 18:24:28,073 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:24:28,113 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:24:28,113 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:24:28,113 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:29:15,729 - INFO - Iterative imputer started...
+2025-11-05 18:29:15,729 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:29:15,878 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:29:15,878 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:29:15,882 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:29:15,882 - INFO - Iterative imputer started...
+2025-11-05 18:29:15,882 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:29:15,923 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:29:15,923 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:29:15,923 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:30:22,934 - INFO - Iterative imputer started...
+2025-11-05 18:30:22,934 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:30:23,083 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:30:23,083 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:30:23,083 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:30:23,083 - INFO - Iterative imputer started...
+2025-11-05 18:30:23,095 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:30:23,134 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:30:23,136 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:30:23,136 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:31:28,962 - INFO - Iterative imputer started...
+2025-11-05 18:31:28,964 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:31:29,110 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:31:29,110 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:31:29,112 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:31:29,112 - INFO - Iterative imputer started...
+2025-11-05 18:31:29,114 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:31:29,153 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:31:29,153 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:31:29,153 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:32:31,480 - INFO - Iterative imputer started...
+2025-11-05 18:32:31,481 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:32:31,628 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:32:31,628 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:32:31,630 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:32:31,630 - INFO - Iterative imputer started...
+2025-11-05 18:32:31,630 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:32:31,667 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:32:31,667 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:32:31,667 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:33:17,587 - INFO - Iterative imputer started...
+2025-11-05 18:33:17,589 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:33:17,734 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:33:17,734 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:33:17,734 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:33:17,734 - INFO - Iterative imputer started...
+2025-11-05 18:33:17,737 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:33:17,777 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:33:17,777 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:33:17,777 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:34:48,637 - INFO - Iterative imputer started...
+2025-11-05 18:34:48,637 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 18:34:48,778 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:34:48,778 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 18:34:48,778 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 18:34:48,778 - INFO - Iterative imputer started...
+2025-11-05 18:34:48,778 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 18:34:48,823 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 18:34:48,823 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 18:34:48,823 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 19:29:32,866 - INFO - Iterative imputer started...
+2025-11-05 19:29:32,866 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 19:29:32,984 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 19:29:32,984 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 19:29:32,984 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 19:29:32,984 - INFO - Iterative imputer started...
+2025-11-05 19:29:32,984 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 19:29:33,016 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 19:29:33,016 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 19:29:33,016 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 19:30:22,707 - INFO - Iterative imputer started...
+2025-11-05 19:30:22,707 - INFO - Checking the null values :-SeniorCitizen      0
+tenure             0
+MonthlyCharges     0
+TotalCharges      10
+YearStayed         0
+dtype: int64
+2025-11-05 19:30:22,840 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 19:30:22,840 - INFO - Imputation complete. Shape: (5634, 5)
+2025-11-05 19:30:22,842 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64
+2025-11-05 19:30:22,842 - INFO - Iterative imputer started...
+2025-11-05 19:30:22,842 - INFO - Checking the null values :-SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      1
+YearStayed        0
+dtype: int64
+2025-11-05 19:30:22,877 - INFO - It checkIndex(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'YearStayed'],
+      dtype='object')
+2025-11-05 19:30:22,878 - INFO - Imputation complete. Shape: (1409, 5)
+2025-11-05 19:30:22,878 - INFO - Missing values after imputation:
+SeniorCitizen     0
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+YearStayed        0
+dtype: int64

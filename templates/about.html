@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% block content %}
+{% set title = 'About Model' %}
+
+<section class="about-wrapper">
+  <div class="about-header">
+    <h1>📈 Telecom Churn Prediction Model</h1>
+    <p>AI-powered analytics to predict and prevent customer churn</p>
+  </div>
+
+  <div class="about-grid">
+
+    <div class="about-card glass">
+      <h2>🎯 Project Goal</h2>
+      <p>
+        The objective of this project is to identify customers who are likely to stop using telecom services.
+        By predicting churn, telecom operators can take proactive measures such as offering personalized retention plans,
+        improving service quality, and reducing revenue loss.
+      </p>
+    </div>
+
+    <div class="about-card glass">
+      <h2>🧠 Model Details</h2>
+      <ul>
+        <li><strong>Algorithm:</strong> Logistic Regression</li>
+        <li><strong>Task:</strong> Binary Classification (Churn / Stay)</li>
+        <li><strong>Evaluation:</strong> Accuracy, Precision, Recall, F1-score</li>
+        <li><strong>Libraries:</strong> Scikit-learn, NumPy, Pandas, Matplotlib</li>
+        <li><strong>Deployment:</strong> Flask Web Framework</li>
+      </ul>
+    </div>
+
+    <div class="about-card glass">
+      <h2>⚙️ Data Preprocessing</h2>
+      <ul>
+        <li>Missing values handled with <strong>Iterative Imputation</strong></li>
+        <li>Outliers removed using <strong>Gaussian Winsorization</strong></li>
+        <li>Encoding: Ordinal, One-Hot, and Label Encoding</li>
+        <li>Scaling with <strong>StandardScaler</strong> for numeric data</li>
+        <li>Balancing via <strong>SMOTE</strong> to handle class imbalance</li>
+      </ul>
+    </div>
+
+    <div class="about-card glass">
+      <h2>📊 Dataset Insights</h2>
+      <ul>
+        <li><strong>Records:</strong> 7,000+ customers</li>
+        <li><strong>Features:</strong> 20+ attributes including tenure, contract, and charges</li>
+        <li><strong>Target:</strong> Customer Churn (Yes / No)</li>
+        <li><strong>Key Predictors:</strong> Contract type, Monthly charges, Total charges, Internet & phone services</li>
+      </ul>
+    </div>
+
+    <div class="about-card glass">
+      <h2>🚀 Purpose & Impact</h2>
+      <p>
+        This solution empowers telecom companies to make informed decisions and minimize churn rate.
+        It bridges the gap between raw customer data and actionable business insights through AI and predictive analytics.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="about-footer">
+    <a href="/" class="btn">🔍 Try Prediction</a>
+  </div>
+</section>
+
+<style>
+.about-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf3ff, #f5f9ff);
+  padding: 3rem 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 2.3rem;
+  color: #004aad;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #555;
+  letter-spacing: 0.4px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  padding: 2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-card h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.about-card ul {
+  padding-left: 1.3rem;
+  list-style: none;
+}
+
+.about-card ul li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.about-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Glass effect */
+.glass {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* CTA footer */
+.about-footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-footer .btn {
+  background: linear-gradient(90deg, #004aad, #00c6ff);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about-footer .btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #003b99, #00aaff);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+}
+</style>
+
+{% endblock %}
