@@ -1,1 +1,1 @@
-# IBM-Customer-Churn-Prediction-Using-Machine-Learning
+# Churn-prediction
